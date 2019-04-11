@@ -19,7 +19,7 @@ public class ValueOperations {
     return n -> n > 3;
   }
 
-  public static Predicate<Integer> isEven() {
+  public static Predicate<Integer> isDivisibleByTwo() {
     return n -> n % 2 == 0;
   }
 
