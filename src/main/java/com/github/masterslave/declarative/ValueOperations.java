@@ -15,7 +15,7 @@ public class ValueOperations {
     return Arrays.stream(integers);
   }
 
-  public static Predicate<Integer> isGreaterThenThree() {
+  public static Predicate<Integer> isGreaterThanThree() {
     return n -> n > 3;
   }
 

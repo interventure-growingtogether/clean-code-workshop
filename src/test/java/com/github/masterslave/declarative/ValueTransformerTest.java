@@ -16,7 +16,7 @@ public class ValueTransformerTest {
 
   @Test
   public void testDoubleFirstEvent() {
-    Optional<Integer> r = valueTransformer.multiplyFirstEvenGreaterThenThree();
+    Optional<Integer> r = valueTransformer.multiplyFirstEvenGreaterThanThree();
     assertThat(r.isPresent(), CoreMatchers.is(Boolean.TRUE));
     assertThat(r.get(), CoreMatchers.is(8));
   }
