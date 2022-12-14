@@ -10,13 +10,13 @@ import org.junit.Test;
  * @author <a href="mailto:slavisa.avramovic@escriba.de">avramovics</a>
  * @since 2019-03-27
  */
-public class ValueTransformerTest {
+public class MnozilacTest {
 
-  private ValueTransformer valueTransformer = new ValueTransformer();
+  private Multiplier mnozilac = new Multiplier();
 
   @Test
   public void testDoubleFirstEvent() {
-    Optional<Integer> r = valueTransformer.multiplyFirstEvenGreaterThanThree();
+    Optional<Integer> r = mnozilac.findFirstEvenNumberGreatherThanThreeAndMultiplyItByTwo();
     assertThat(r.isPresent(), CoreMatchers.is(Boolean.TRUE));
     assertThat(r.get(), CoreMatchers.is(8));
   }

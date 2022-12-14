@@ -7,9 +7,9 @@ import static com.github.masterslave.declarative.ValueOperations.numbers;
 
 import java.util.Optional;
 
-public class ValueTransformer {
+public class Multiplier {
 
-  public Optional<Integer> multiplyFirstEvenGreaterThanThree() {
+  public Optional<Integer> findFirstEvenNumberGreatherThanThreeAndMultiplyItByTwo() {
     return numbers(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
         .filter(isGreaterThanThree().and(isDivisibleByTwo()))
         .map(multiplyByTwo())
